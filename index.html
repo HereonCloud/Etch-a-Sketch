@@ -3,9 +3,22 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="./styles.css" rel="stylesheet"/>
+        <title>Simple Etch a Sketch</title>
     </head>
     <body>
-        <button id="prompt">Change Grid</button>
+        <div style="width: 100%; height: 100%; display: flex;">
+            <div class="optionSection">
+                <div class="gridSelection">
+                    <input id="input" placeholder="Set Grid Here"></input>
+                    <button id="prompt">Set</button>
+                </div>
+                <button id="black">Black Color</button>
+                <button id="random">Random Color</button>
+                <button id="eraser">Eraser</button>
+            </div>
+            <div class="drawingSection">
+            </div>
+        </div>
         <script src="./script.js"></script>
     </body>
 </html>
